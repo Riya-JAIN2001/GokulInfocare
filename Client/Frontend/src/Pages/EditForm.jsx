@@ -18,7 +18,7 @@ const EditForm = ({ contactData, onClose, onSave }) => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("https://backend-gokulinfocare-task-1.onrender.com/")
       .then((res) => res.json())
       .then((data) => {
         setCountries(data);
